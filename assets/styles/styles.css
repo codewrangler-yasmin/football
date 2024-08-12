@@ -3,6 +3,7 @@
   --bg-dark: #0b0223;
   --bg-white: #ffffff;
   --bg-primary: #e02c6d;
+  --bg-blue: #2d25a0;
 
   --text-white: #ffffff;
   --text-primary: #6c6c6c;
@@ -108,4 +109,115 @@ h6 {
   flex-direction: column;
   justify-self: center;
   gap: 24px;
+}
+/* header navbar styles */
+#header-container {
+  background: var(--bg-blue);
+}
+.navbar {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.navbar-menu {
+  grid-column: 1 / 9;
+  align-self: center;
+}
+.navbar-btn-container {
+  grid-column: 11 / 13;
+  justify-self: end;
+}
+ul.nav-links > li > a {
+  color: var(--text-white);
+}
+.mobile-menu {
+  display: none;
+}
+.btn {
+  padding: 10px 24px;
+  color: var(--text-white);
+  font-size: 1rem;
+  font-weight: 400 !important;
+  line-height: normal;
+  display: inline-block;
+}
+.btn-primary {
+  background: var(--bg-primary);
+}
+ul.nav-links {
+  gap: 32px;
+}
+/* banner styles */
+.banner-text {
+  grid-column: 1 / 7;
+  align-self: center;
+  justify-self: start;
+}
+.banner-text h2 {
+  color: var(--text-white);
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+.banner-img {
+  grid-column: 7 / 13;
+}
+/*  player cards styles */
+.player-cards-container {
+  gap: 30px;
+}
+.single-card-item {
+  grid-column: span 4;
+  padding: 25px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.player-details h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+/* featured styles */
+
+.featured-text {
+  grid-column: 1 / 6;
+  align-self: center;
+}
+
+.featured-img {
+  grid-column: 7 / 13;
+}
+
+.featured-text h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+/* footer styles */
+.footer-logo,
+.footer-social-icons,
+.copy-right {
+  grid-column: 1 / 13;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 50%;
+}
+
+.footer-social-icons a img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-social-icons a {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.footer-container {
+  row-gap: 24px;
 }
